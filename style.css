@@ -339,6 +339,7 @@ section .title::after{
     overflow: hidden;
     transition: all 0.3s ease;
     color: #fff;
+    position: relative;
 }
 .projects .carousel .card:hover{
     background: crimson;
@@ -357,6 +358,13 @@ section .title::after{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
+}
+.projects .carousel .card a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 .projects .carousel .card img{
     height: 150px;
