@@ -106,7 +106,7 @@ function getWeather() {
 
 //Display Weather UI
 function displayWeather() {
-  iconELement.innerHTML = `<img src="images/${weather.iconId}.png" alt="">`
+  iconELement.innerHTML = `<img src="images/${weather.iconId}.svg" alt="">`
   tempELement.innerHTML = `${weather.temperature.value}°<span>C</span>`
   descELement.innerHTML = weather.description
   locationELement.innerHTML = `${weather.city}, ${weather.country}`
