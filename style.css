@@ -425,6 +425,11 @@ section .title::after{
 .contact .contact-content .row .info{
     margin-left: 30px;
 }
+
+.contact .contact-content .row:last-child .info {
+    margin-left: 25px;
+}
+
 .contact .contact-content .row i{
     font-size: 25px;
     color: crimson;
