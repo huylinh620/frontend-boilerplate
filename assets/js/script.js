@@ -6,4 +6,8 @@ $(function() {
       $('.header').removeClass('sticky');
     }
   })
+
+  $('.navbar-toggler').click(function() {
+    $('.header').toggleClass("active");
+  });
 });
