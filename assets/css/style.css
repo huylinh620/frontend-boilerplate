@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5; }
+
+img {
+  width: 100%; }
+
+section {
+  padding: 40px 0; }
+  section .section_title {
+    font-size: 30px;
+    margin: 20px 0 30px;
+    position: relative;
+    text-align: center; }
+    section .section_title::after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 50%;
+      height: 1px;
+      background: #000;
+      transform: translateX(-50%);
+      width: 80px; }
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2; }
+  .header.sticky {
+    background: #000; }
+  .header > .container-fluid {
+    padding: 0 30px; }
+
+.navigation_area {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0; }
+  .navigation_area a {
+    color: #fff; }
+    .navigation_area a:hover {
+      opacity: .7; }
+  .navigation_area .mainmenu {
+    flex-grow: 0; }
+
+.home {
+  background: url(/assets/images/1.jpg) no-repeat 50% 0/cover;
+  height: 500px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .home_text {
+    font-size: 40px;
+    text-align: center;
+    color: #fff; }
+
+.services_card {
+  margin-bottom: 40px; }
+
+footer {
+  padding: 10px;
+  background: #000;
+  color: #fff;
+  text-align: center; }

@@ -1,0 +1,109 @@
+$colorBlack: #000;
+$colorWhite: #fff;
+
+
+@mixin sp {
+  @media (max-width: 767px) {
+    @content
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+}
+
+section {
+  padding: 40px 0;
+
+  .section_title {
+    font-size: 30px;
+    margin: 20px 0 30px;
+    position: relative;
+    text-align: center;
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 50%;
+      height: 1px;
+      background: $colorBlack;
+      transform: translateX(-50%);
+      width: 80px;
+    }
+  }
+}
+
+// style header
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+
+  &.sticky {
+    background: $colorBlack;
+  }
+
+  > .container-fluid {
+    padding: 0 30px;
+  }
+}
+
+.navigation_area {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+  a {
+    color: $colorWhite;
+    &:hover {
+      opacity: .7;
+    }
+  }
+  .mainmenu {
+    flex-grow: 0;
+  }
+}
+
+// style home
+.home {
+  background: url(/assets/images/1.jpg) no-repeat 50% 0/cover;
+  height: 500px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &_text {
+    font-size: 40px;
+    text-align: center;
+    color: $colorWhite;
+  }
+}
+
+//services
+.services {
+  &_card {
+    margin-bottom: 40px;
+  }
+}
+
+// style footer
+footer {
+  padding: 10px;
+  background: $colorBlack;
+  color: $colorWhite;
+  text-align: center;
+}
