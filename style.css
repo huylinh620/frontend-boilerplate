@@ -16,6 +16,10 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
+img {
+    width: 100%;
+}
+
 
 /* custom scroll bar */
 
@@ -227,9 +231,6 @@ section .title::after {
 }
 
 .about .about-content img {
-    height: 400px;
-    width: 400px;
-    object-fit: cover;
     border-radius: 6px;
 }
 
