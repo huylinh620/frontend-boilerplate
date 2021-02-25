@@ -8,17 +8,17 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "postcss-custom-media": "^7.0.8",
-    "postcss-import": "^14.0.0"
-  },
   "devDependencies": {
     "browser-sync": "^2.26.13",
     "cssnano": "^4.1.10",
     "gulp": "^4.0.2",
+    "gulp-image": "^6.2.1",
     "gulp-postcss": "^9.0.0",
     "gulp-sass": "^4.1.0",
     "gulp-terser": "^1.4.0",
-    "postcss": "^8.1.2"
+    "postcss": "^8.2.6",
+    "postcss-mixins": "^7.0.3",
+    "postcss-custom-media": "^7.0.8",
+    "postcss-import": "^14.0.0"
   }
 }
