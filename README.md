@@ -7,7 +7,7 @@
 
 In this proejct, Gulp is configured to run the following functions:
 
-* Compile the SCSS files to CSS
+* Compile the PostCSS files to CSS
 * Autoprefix and minify the CSS file
 * Concatenate the JS files
 * Uglify the JS files
